@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript and the DOM</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1 id="myHeading">JavaScript and the DOM</h1>
+    <p>This shows how JavaScript can be used to change textual content and attributes of an element.</p>
+    <button id ="toggleList">Hide list</button> <!-- Added button to trigger the hiding/unhiding of the list. -->
+    <div class="list"> <!-- This is just a wrapper for all the things the above toggleList button can hide/unhide. -->
+      <p class="description">Things that are purple:</p> <!-- New class added relative to index2! -->
+      <input type="text" class="description"> <!-- New addition relative to index2 -->
+      <button class="description">Change list description</button> <!-- New addition relative to index2 -->
+      <ul>
+          <li>grapes</li>
+          <li>oranges</li>
+          <li>amethyst</li>
+          <li>lavender</li>
+          <li>salt</li>
+          <li>pepper</li>
+          <li>plums</li>
+      </ul>
+    </div>
+  <script src="js/app4.js"></script>
+  </body>
+</html>

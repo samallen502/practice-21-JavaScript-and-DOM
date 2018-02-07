@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript and the DOM</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1 id="myHeading">JavaScript and the DOM</h1>
+    <p>This shows how JavaScript can be used to change textual content and attributes of an element.</p>
+    <button id ="toggleList">Hide list</button>
+    <div class="list">
+      <p class="description">Things that are purple:</p>
+      <input type="text" class="description">
+      <button class="description">Change list description</button>
+      <ul>
+          <li>grapes</li>
+          <li>oranges</li>
+          <li>amethyst</li>
+          <li>lavender</li>
+          <li>salt</li>
+          <li>pepper</li>
+          <li>plums</li>
+      </ul>
+      <input type="text" class="addItemInput"> <!-- NEW -->
+      <button class="addItemButton">Add Item</button> <!-- NEW -->
+      <button class="removeItemButton">Remove last item</button> <!-- NEW -->
+    </div>
+  <script src="js/app5.js"></script>
+  </body>
+</html>
