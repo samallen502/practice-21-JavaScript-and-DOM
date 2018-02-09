@@ -21,7 +21,17 @@ index7 hooks up with app6 and shows how you can listen for events with addEventL
 
 index8 was used with app7 to demonstrate how event handlers can be applied to parent elements to control event bubbling, making code taxing on users' system resources. Also, this fixes the bug that index7 had, I believe, where if the user added a new list item within the preview, that list item would not behave as the "real" list items from the HTML did. Inspired by: https://teamtreehouse.com/library/event-bubbling-and-delegation
 
-So, the pairings are index.html + app2 ... index2 + app3 ... index3 + app4 ... index4 + app5 ... index5 + temp ... index6 + temp2 ... index7 + app6 ... and index8 + app7. See app2 + app3 + app4 + app5 + temp + temp2 + app6 + app7 for JavaScript code with comments, as always!  The index files have already been coded to link to the appropriate app or temp file, so don't worry about hooking anything up manually.
+index9 and app8 combined to put a different spin on the previous step (see above paragraph). Instead of capitalizing elements upon mouseover, elements get deleted upon the click of a button. It's noteworthy that parentNode was used here.  Inspired by: https://teamtreehouse.com/library/using-parentnode-to-traverse-up-the-dom
+
+index10 and app9 combined to add an "up" button to each list item. Click the "up" button will moved the list item up the list. It's noteworthy that previousElementSibling and insertBefore were used here.  Inspired by: https://teamtreehouse.com/library/using-previouselementsibling-and-insertbefore
+
+For index11 and app10, I flew solo and added a fully functioning down button using nextElementSibling. Inspired by: https://teamtreehouse.com/library/challenge-using-nextelementsibling
+
+The last step created a bug, though! If you add new items to the list, the new items don't have up/down/remove buttons, like the other items. Thus, index12 and app11 were created. To deal with the problem, all buttons were deleted from index. Yep, all of them! Instead, app11 was modified so that JS would create buttons, give the buttons appropriate classes and text content, then add the buttons in the right spots. It bears mentioning that firstElementChild and lastElementChild were part of the fix. Inspired by: https://teamtreehouse.com/library/getting-all-children-of-a-node-with-children + https://teamtreehouse.com/library/getting-the-first-and-last-child
+
+As the last video mentioned above pointed out, though, this project can still be built upon. There is no need, for example, for index12/app11 to have an "up" button at the top of the list and a "down" button at the bottom of the list. Maybe I will return to this someday and fix that.
+
+So, the pairings are index.html + app2 ... index2 + app3 ... index3 + app4 ... index4 + app5 ... index5 + temp ... index6 + temp2 ... index7 + app6 ... index8 + app7 ... and index9 + app8 ... index10 + app19 ... index11 + app10 ... and index12 + app 11. See app2 + app3 + app4 + app5 + temp + temp2 + app6 + app7 + app8 + app10 + app11 for JavaScript code with comments, as always!  The index files have already been coded to link to the appropriate app or temp file, so don't worry about hooking anything up manually.
 
 BUGS ENCOUNTERED & LESSONS LEARNED:
 - Initially, index & app worked to change header upon click to red, as it should. Upon adding button to change header red upon click, everything broke. I even tried to create a "cleaner" JS under "app2" and hook that up properly within HTML but it changed nothing.  Within index, I had a comment that ended with " -- >" instead of "-->" and, although VSC did not display this as an error, one simple space was completely killing my HTML->JavaScript hookup, breaking everything. That's scary!
